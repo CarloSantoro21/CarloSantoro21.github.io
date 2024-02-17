@@ -15,8 +15,9 @@
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
-        />      
+        />
 
+        
         <!-- Log in Modal -->        
         <div
             class="modal fade"
@@ -200,13 +201,6 @@
     </div>
     </div>
 
-
-        <style>
-            .card-img-top{
-                max-height: 300px;
-                min-height: 100px;
-            }      
-        </style>
     </head>
 
     <body>
@@ -214,8 +208,8 @@
             <!-- place navbar here -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
-                    <a class="navbar-brand" href="./main.html">
-                        <img src="./P_01/img/zarla-alquila-car-1x1-2400x2400-20220110-xr89q6q4hvkb9bdj3yhc.png" width="80" alt="Logo">
+                    <a class="navbar-brand" href="../main.html">
+                        <img src="./img/zarla-alquila-car-1x1-2400x2400-20220110-xr89q6q4hvkb9bdj3yhc.png" width="80" alt="Logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
                         aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
@@ -224,21 +218,21 @@
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" href="./main.html" aria-current="page">Home</a>
+                                <a class="nav-link active" href="../main.html" aria-current="page">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./P_01/P01_about_us.html">About us</a>
+                                <a class="nav-link" href="./P01_about_us.html">About us</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">Products</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                    <a class="dropdown-item" href="./P_01/P01_cat_A.html">Category A</a>
-                                    <a class="dropdown-item" href="./P_01/P01_cat_B.html">Category B</a>
+                                    <a class="dropdown-item" href="./P01_cat_A.html">Category A</a>
+                                    <a class="dropdown-item" href="./P01_cat_B.html">Category B</a>
                                 </div>
                             </li>
                         </ul>
-                        <form class="d-flex ">
+                        <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
@@ -259,7 +253,7 @@
                                 </a>
                             </li>
                             <li class="nav-item px-5">
-                                <a href="P_01/P01_cart.html">
+                                <a href="P01_cart.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-cart" viewBox="0 0 16 16">
                                         <path
@@ -270,149 +264,14 @@
                         </ul>
                     </div>
                 </div>
-            </nav>            
+            </nav> 
         </header>
         <main>
-            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="First slide"
-                    ></li>
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="1"
-                        aria-label="Second slide"
-                    ></li>
-                    <li
-                        data-bs-target="#carouselId"
-                        data-bs-slide-to="2"
-                        aria-label="Third slide"
-                    ></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <img
-                            src="./P_01/img/bugatti.jpg"
-                            class="w-100 d-block"
-                            alt="First slide"
-                        />
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            src="./P_01/img/mustang.jpg"
-                            class="w-100 d-block"
-                            alt="Second slide"
-                        />
-                    </div>
-                    <div class="carousel-item">
-                        <img
-                            src="./P_01/img/Supra.jpg"
-                            class="w-100 d-block"
-                            alt="Third slide"
-                        />
-                    </div>
-                </div>
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide="prev"
-                >
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselId"
-                    data-bs-slide="next"
-                >
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <div class="d-flex row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-                <div class="card m-2 mx-3" style="width: 18rem;">
-                    <img src="./P_01/img/prodAzul.jpg" class="card-img-top" alt="Blue car">
-                    <div class="card-body">
-                        <h5 class="card-title">Blue car</h5>
-                        <p class="card-text">Amazing blue car</p>
-                    </div>
-                </div>
-                <div class="card m-2 mx-3" style="width: 18rem;">
-                    <img src="./P_01/img/prodRojo.jpg" class="card-img-top" alt="Red car">
-                    <div class="card-body">
-                        <h5 class="card-title">Red car</h5>
-                        <p class="card-text">Amazing red car</p>
-                    </div>
-                </div>
-                <div class="card m-2 mx-3" style="width: 18rem;">
-                    <img src="./P_01/img/prodBlanco.jpg" class="card-img-top" alt="White car">
-                    <div class="card-body">
-                        <h5 class="card-title">White car</h5>
-                        <p class="card-text">Amazing white car</p>
-                    </div>
-                </div>
-                <div class="card m-2 mx-3" style="width: 18rem;">
-                    <img src="./P_01/img/prodCamaro.jpg" class="card-img-top" alt="Camaro">
-                    <div class="card-body">
-                        <h5 class="card-title">Camaro</h5>
-                        <p class="card-text">Amazing camaro</p>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-                <div class="card m-2 mx-3" style="width: 18rem;">
-                    <img src="./P_01/img/prodDescAzul.jpg" class="card-img-top" alt="Blue and white car">
-                    <div class="card-body">
-                        <h5 class="card-title">Blue and white car</h5>
-                        <p class="card-text">Amazing blue and white card</p>
-                    </div>
-                </div>
-                <div class="card m-2 mx-3" style="width: 18rem;">
-                    <img src="./P_01/img/prodMazda.jpg" class="card-img-top" alt="Mazda">
-                    <div class="card-body">
-                        <h5 class="card-title">Mazda</h5>
-                        <p class="card-text">Amazing mazda</p>
-                    </div>
-                </div>
-                <div class="card m-2 mx-3" style="width: 18rem;">
-                    <img src="./P_01/img/prodRosa.jpg" class="card-img-top" alt="Pink car">
-                    <div class="card-body">
-                        <h5 class="card-title">Pink car</h5>
-                        <p class="card-text">Amazing pink car</p>
-                    </div>
-                </div>
-                <div class="card m-2 mx-3" style="width: 18rem;">
-                    <img src="./P_01/img/prodViejo.jpg" class="card-img-top" alt="Old car">
-                    <div class="card-body">
-                        <h5 class="card-title">Old car</h5>
-                        <p class="card-text">Amazing old car</p>
-                    </div>
-                </div>
-            </div>
+            <h1>ABOUT US</h1>
         </main>
         <footer>
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul>
-            </nav>
+            <!-- place footer here -->
         </footer>
-        
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

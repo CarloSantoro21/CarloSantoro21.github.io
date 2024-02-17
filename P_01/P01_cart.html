@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <!-- Log in Modal -->        
+        <div
+        class="modal fade"
+        id="modalLogin"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+        >
+        <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+        role="document"
+        >
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">
+                Log in
+            </h5>
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+            ></button>
+        </div>
+        <form action="">
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="email-addon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-envelope"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M8 0a8 8 0 0 1 5.33 13.34c.43.53.67 1.21.67 1.93v.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-.5c0-.72.24-1.4.67-1.93A8 8 0 0 1 8 0zm.5 3.14L15 6.56v6.19a7.96 7.96 0 0 1-1 1.5 8 8 0 0 1-12 0 7.96 7.96 0 0 1-1-1.5V6.56l6.5-3.42a2 2 0 0 1 1 0z"
+                            ></path>
+                        </svg>
+                    </span>
+                    <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                        aria-label="Email"
+                        aria-describedby="email-addon"
+                        required
+                    />
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="password-addon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-lock"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M4 1a1 1 0 0 1 1 1v1h6V2a1 1 0 0 1 2 0v1h1a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h1V2a1 1 0 0 1 1-1z"
+                            ></path>
+                        </svg>
+                    </span>
+                    <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Password"
+                        aria-label="Password"
+                        aria-describedby="password-addon"
+                        required
+                    />
+                </div>
+                <div class="form-check">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="rememberMe"
+                    />
+                    <label class="form-check-label" for="rememberMe">
+                        Remember me
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p>Don't have an account?</p>
+                <a href="#" class="btn btn-link" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modalSignup"> Sign up here</a>
+                <button type="submit" class="btn btn-primary">Log in</button>
+            </div>
+        </form>
+        </div>
+        </div>
+        </div>
+
+        <!-- Sign Up Modal -->
+        <div
+        class="modal fade"
+        id="modalSignup"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+        >
+        <div
+        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+        role="document"
+        >
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId">
+                Sign up
+            </h5>
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+            ></button>
+        </div>
+        <form action="">
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="First Name"
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="mb-3">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Last Name"
+                                    required
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Email"
+                            required
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <input
+                            type="password"
+                            class="form-control"
+                            placeholder="Password"
+                            required
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <input
+                            type="password"
+                            class="form-control"
+                            placeholder="Confirm Password"
+                            required
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+        </form>
+        </div>
+        </div>
+        </div>
+
+
+        <style>
+            table {
+                border-collapse: separate;
+                border-spacing: 20px;
+                width: 100%;
+            }
+    
+            table, th, td {
+                border: 1px solid white;
+            }
+    
+            .media {
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="../main.html">
+                        <img src="./img/zarla-alquila-car-1x1-2400x2400-20220110-xr89q6q4hvkb9bdj3yhc.png" width="80" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../main.html" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./P01_about_us.html">About us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Products</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="./P01_cat_A.html">Category A</a>
+                                    <a class="dropdown-item" href="./P01_cat_B.html">Category B</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin" role="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-person" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                                    </svg>
+                                    Log in
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalSignup" role="button">
+                                    Sign up
+                                </a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a href="P01_cart.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8a.5.5 0 0 1-.491.408H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zm3.102 2l1.313 7h8.17l1.313-7z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
+        </header>
+        <main>
+            <table border="1" cellspacing="10">
+                <tr>
+                    <td style="border: 1px solid white;"><div class="media border p-3">
+                    
+                        <img src="./img/prodCamaro.jpg" alt="Product A" class="mr-3 mt-3 rounded-circle float-end" style="width:60px;">
+                        <div class="media-body">
+                            <h4>Product A <button type="button" class="btn btn-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                    <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                                </svg>
+                            </button></h4>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Quantity: </span>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Price: </span>
+                                <input type="text" class="form-control">
+                            </div>                          
+                        </div>
+                    </div></td>
+                    <td rowspan="2" colspan="2" style="border: 1px solid white;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <h2>Total purchase</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Product A: </strong>2 x 20.00 MXN
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Product B: </strong>5 x 30.00 MXN
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Shipping cost: </strong>60.00 MXN
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h4>Total: 250.00 MXN</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-primary">Pay</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    <button type="button" class="btn btn-danger">Cancel</button>                                        
+                                </td>
+                            </tr>
+                        </table>                    
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid white;">
+                        <div class="media border p-3">
+                            <img src="./img/prodViejo.jpg" alt="Product B" class="mr-3 mt-3 rounded-circle float-end" style="width:60px;">
+                        <div class="media-body">
+                            <h4>Product B <button type="button" class="btn btn-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                    <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                                </svg>
+                            </button></h4>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Quantity: </span>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Price: </span>
+                                <input type="text" class="form-control">
+                            </div>                          
+                        </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
